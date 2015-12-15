@@ -1,0 +1,43 @@
+package elevenplus;
+import java.awt.Container;
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import java.net.URL;
+
+public class pickAvatar extends JFrame{
+		//ImageIcon image
+		private JLabel item1;
+		private JPanel menu;
+		private ImageIcon player;
+		Container c= getContentPane(); //This is the white page section 
+		private URL imageURL = getClass().getResource("kasashi.png"); 
+		
+			
+		public pickAvatar(){
+			
+			layout1();
+		}
+		
+		public void layout1(){
+			//c.setLayout(new FlowLayout());
+			setTitle("The Eleven Plus game");
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			setSize(275,180);
+			setVisible(true);
+			menu();
+			
+		}
+		
+		private JPanel menu(){
+			 
+			menu = new JPanel();
+			add(menu);
+			return menu;
+		}
+		
+}
+
+

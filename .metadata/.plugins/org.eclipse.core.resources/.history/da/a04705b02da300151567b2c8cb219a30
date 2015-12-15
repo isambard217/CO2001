@@ -1,0 +1,22 @@
+package elevenplus;
+
+import java.io.*;
+
+public class Questions {
+	
+	public Questions(){
+		
+		try{
+			File infile = new File("questions.txt");
+			
+			FileReader fileReader = new FileReader(infile);
+			
+			BufferedReader bufReader = new BufferedReader(fileReader);
+			}catch(Exception e){
+				
+				
+			}	
+	}
+
+	
+}

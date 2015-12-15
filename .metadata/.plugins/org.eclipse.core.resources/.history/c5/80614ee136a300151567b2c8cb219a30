@@ -1,0 +1,55 @@
+package elevenplus;
+
+import java.io.*;
+
+public class Questions {
+	BufferedReader bufReader;
+	File infile;
+	FileReader fileReader;
+	String str;
+	String[] singleQuestions;
+	int[] multipleQuestions;
+	
+	public Questions(){
+		
+		try{
+			infile = new File("questions.txt");
+			fileReader = new FileReader(infile);
+			bufReader = new BufferedReader(fileReader);	
+			returnQuestions();
+			//int i = Integer.parseInt(str);
+			bufReader.close();
+			// This code must always be wrapped in a Try and Catch method
+			// Otherwise Java will throw an error
+			}catch(Exception e){
+				
+				
+			}
+		
+			//Write a method to loop through the question file to gather the 
+		    //Questions
+	}
+	
+	public void returnQuestions(){
+		
+	try {
+		
+		int temp = 0;
+		singleQuestions= new String[temp];
+		
+	while(bufReader.ready()){
+			
+			 System.out.println(bufReader.readLine());
+			 bufReader
+			  
+		}
+		
+	}catch (IOException e){
+		// TODO Auto-generated catch block
+		System.out.print(e.getMessage());
+	}
+	
+	}
+
+	
+}

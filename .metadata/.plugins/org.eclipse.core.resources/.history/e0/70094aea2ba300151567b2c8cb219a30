@@ -1,0 +1,12 @@
+package elevenplus;
+
+import java.io.FileReader;
+
+public class Questions {
+
+	File infile = new File("C:/Users/User/Documents/questionsfortask/questions.txt");
+	
+	FileReader fileReader = new FileReader(infile);
+
+	BufferedReader bufReader = new
+}

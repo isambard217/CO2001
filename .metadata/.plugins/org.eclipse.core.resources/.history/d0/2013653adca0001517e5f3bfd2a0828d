@@ -1,0 +1,13 @@
+package elevenplus;
+
+import javax.swing.JFrame;
+
+public class Run extends JFrame{
+public static void main(String[]args){
+	
+		pickAvatar player = new pickAvatar();
+		
+		
+}
+
+}

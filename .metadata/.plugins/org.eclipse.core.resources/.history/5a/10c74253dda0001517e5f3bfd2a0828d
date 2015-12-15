@@ -1,0 +1,23 @@
+package elevenplus;
+
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
+public class Run extends JFrame{
+public static void main(String[]args){
+	
+		try{
+			
+			SwingUtilities.invokeLater(new Runnable(){
+			public void run(){
+				pickAvatar gui = new pickAvatar();
+			}
+		});
+		
+}catch(Exception e){
+	System.out.println(e.getMessage());
+
+}
+}
+
+}

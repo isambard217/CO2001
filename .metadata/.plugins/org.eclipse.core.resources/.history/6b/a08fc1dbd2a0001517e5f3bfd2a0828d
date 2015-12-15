@@ -1,0 +1,15 @@
+package elevenplus;
+
+import javax.swing.JFrame;
+
+public class Run extends JFrame{
+public static void main(String[]args){
+	
+		pickAvatar player = new pickAvatar();
+		player.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		player.setSize(275,180);
+		player.setVisible(true);
+		
+}
+
+}

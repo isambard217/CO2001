@@ -1,0 +1,20 @@
+package elevenplus;
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class pickAvatar extends JFrame{
+
+		private JLabel item1;
+		
+		public pickAvatar(){
+			super("The title bar"); // only take one attribute too set title
+			setLayout(new FlowLayout());
+			
+			item1 = new JLabel("Choose a player");
+			item1.setToolTipText("Pick a player");
+			add(item1);
+		}
+}
+
+
